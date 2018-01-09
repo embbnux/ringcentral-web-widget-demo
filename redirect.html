@@ -24,7 +24,7 @@
       }
       if (window.parent && window.parent !== window) {
         window.parent.postMessage({
-          refreshCallbackUri: callbackUri,
+          refreshCallbackUri: window.location.href,
         }, '*');
       }
       var rcSDK = new RingCentral.SDK({
