@@ -65,7 +65,7 @@
         getCallLog(call);
       });
     }
-    function checkoutLoign() {
+    function checkLoign() {
       setTimeout(function () {
         platform.loggedIn().then(function(logined) {
           if (logined) {
@@ -81,12 +81,12 @@
               }
             });
           } else {
-            checkoutLoign();
+            checkLoign();
           }
         })
       }, 2000);
     }
-    checkoutLoign();
+    checkLoign();
     </script>
     </body>
 </html>
